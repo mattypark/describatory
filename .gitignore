@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Local scratch / logs
+*.log
+tmp/
+scratch/
+
+# Never commit secrets or tokens
+.env
+.env.*
+*.token
+*.pat
