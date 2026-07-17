@@ -40,13 +40,15 @@ the copy** using a written formula, so there's no external API key.
              image (GitHub has no API for that — you upload those manually).
 ```
 
-Three modes share this pipeline:
+Two commands share this pipeline — one for your **whole account**, one for a
+**single repo**:
 
 | Command | What it does |
 |---------|--------------|
 | `/repo-describe` | Learn the account, then describe **every repo** (About + topics). |
 | `/repo-describe --profile` | Write your **bio** + **profile README** (`USERNAME/USERNAME`). |
-| `/repo-describe owner/repo --media` | Enrich **one repo's README** with banner, screenshots, badges, video. |
+| `/repo-describe-one owner/repo` | Describe **one repo** (About + topics), consistent with your voice. |
+| `/repo-describe-one owner/repo --media` | Enrich **one repo's README** with banner, screenshots, badges, video. |
 
 ### The account-learning step
 
@@ -94,32 +96,32 @@ run `/repo-describe`.
 
 ## How to run it
 
-**Describe all your repos** (dry run — shows the review table, pushes nothing):
+### Whole account — `/repo-describe`
+
+Dry run over all repos (shows the review table, pushes nothing):
 ```
 /repo-describe
 ```
-
-**Actually apply** after reviewing:
+Apply after reviewing:
 ```
 /repo-describe --apply
 ```
-
-**One repo only:**
-```
-/repo-describe owner/repo
-```
-
-**Write your bio + profile README:**
+Write your bio + profile README:
 ```
 /repo-describe --profile
 ```
-
-**Add media to a repo's README:**
-```
-/repo-describe owner/repo --media
-```
-
 Flags: `--public-only`, `--include-forks`, `--include-archived`.
+
+### Single repo — `/repo-describe-one`
+
+Describe one repo:
+```
+/repo-describe-one owner/repo
+```
+Add media to that repo's README:
+```
+/repo-describe-one owner/repo --media
+```
 
 ---
 
@@ -205,7 +207,8 @@ agents, or manual use all work**. See
 ## Repo layout
 
 ```
-commands/repo-describe.md        the slash command (the orchestration brain)
+commands/repo-describe.md        whole-account command (learn + all repos + profile)
+commands/repo-describe-one.md    single-repo command (one repo + media)
 reference/formula.md             repo-description formula
 reference/profile.md             account identity, bio, profile README
 reference/media.md               README media + image-intake playbook

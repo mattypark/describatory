@@ -48,6 +48,8 @@ FILTER="$FILTER | {
   pushed_at
 }"
 
+# gh's --jq streams one compact object per line (JSONL). Note: `gh api` has no
+# `-c` flag — compactness comes from gh's jq engine, not a flag.
 gh api --paginate \
   "/user/repos?affiliation=owner&visibility=${VISIBILITY}&per_page=100&sort=pushed" \
-  --jq "$FILTER" -c
+  --jq "$FILTER"

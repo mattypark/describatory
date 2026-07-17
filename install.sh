@@ -64,9 +64,9 @@ fi
 # --- 3. install the command + scripts -------------------------------------
 say "Installing command and scripts..."
 mkdir -p "${CLAUDE_DIR}/commands" "${DEST}/scripts" "${DEST}/reference"
-cp "${SRC_DIR}/commands/repo-describe.md" "${CLAUDE_DIR}/commands/repo-describe.md"
-cp "${SRC_DIR}/scripts/"*.sh              "${DEST}/scripts/"
-cp "${SRC_DIR}/reference/"*.md            "${DEST}/reference/"
+cp "${SRC_DIR}/commands/"*.md "${CLAUDE_DIR}/commands/"
+cp "${SRC_DIR}/scripts/"*.sh  "${DEST}/scripts/"
+cp "${SRC_DIR}/reference/"*.md "${DEST}/reference/"
 chmod +x "${DEST}/scripts/"*.sh
 
 echo
