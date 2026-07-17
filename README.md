@@ -1,6 +1,23 @@
+<div align="center">
+
 # describatory
 
-**Learn your whole GitHub, then rewrite every repo's description in one consistent voice — automatically.**
+<img src="https://img.shields.io/badge/--000000?style=flat-square" width="100%" height="1" alt="">
+
+### your GitHub repo descriptions are empty, stale, or generic. and your profile is an afterthought. i fixed it.
+
+<p>
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat" alt="License">
+  <img src="https://img.shields.io/badge/Claude%20Code-command-8A63D2?style=flat" alt="Claude Code">
+  <img src="https://img.shields.io/badge/requires-gh%20cli-brightgreen?style=flat&logo=github" alt="requires gh">
+  <img src="https://img.shields.io/badge/PRs-welcome-ff69b4?style=flat" alt="PRs welcome">
+</p>
+
+**stop shipping repos that look abandoned lol**
+
+</div>
+
+---
 
 Your READMEs get all the love. The one-line **description** in each repo's
 "About" sidebar — the line that shows in search, your profile grid, and social

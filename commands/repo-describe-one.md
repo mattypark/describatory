@@ -130,8 +130,11 @@ Creates `assets/` tree, a `MEDIA-NEEDED.md` checklist, and prints the badge row.
   an exact numbered checklist and place each file after confirming its purpose.
 
 ## M4 — Wire the README
-Insert media using the exact markdown from media.md (centered banner, real
-badges only, hero, feature grid, video/certs) with real alt text. Show a diff.
+ALWAYS start the README with media.md's **Standard header block** (centered
+title → rule → hook → badge row → punchline → rule) — it's the required house
+style. Then insert the rest using the exact markdown from media.md (banner,
+real badges only, hero, feature grid, video/certs) with real alt text, and
+close with the optional license+contact footer. Show a diff.
 
 ## M5 — Hand off (never auto-commit)
 Report what was added and what's still awaited. STOP before committing — give

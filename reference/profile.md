@@ -62,10 +62,25 @@ profile page. If that repo doesn't exist, describatory offers to create it.
 
 ### Markdown patterns
 
-**Header:**
-```markdown
+**Header** — use the same centered house style as the README standard header
+(see media.md "Standard header block"):
+```html
+<div align="center">
+
 # Hi, I'm <Name> 👋
+
+<img src="https://img.shields.io/badge/--000000?style=flat-square" width="100%" height="1" alt="">
+
 ### <One-line identity — what you build, for whom>
+
+<p>
+  <img src="https://img.shields.io/github/followers/USER?style=flat&label=followers" alt="followers">
+  <img src="https://img.shields.io/badge/building-hardware%20%2B%20AI-blue?style=flat" alt="focus">
+</p>
+
+</div>
+
+---
 ```
 
 **Featured projects table:**

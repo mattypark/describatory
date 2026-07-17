@@ -109,6 +109,73 @@ assets/
 Optimize before committing: PNG for UI, GIF for short demos (keep < 5 MB so it
 autoplays smoothly), MP4 for anything longer. Always set explicit widths.
 
+## Standard header block (REQUIRED — every README opens with this)
+
+Every README this tool writes MUST open with this exact centered block: title →
+rule → tagline → badge row → punchline → rule. It's the house style — clean,
+centered, professional. Do not deviate from the structure; only fill in the
+content.
+
+```html
+<div align="center">
+
+# ProjectName
+
+<img src="https://img.shields.io/badge/--000000?style=flat-square" width="100%" height="1" alt="">
+
+### <one-line hook — punchy, specific, lowercase is fine>
+
+<p>
+  <img src="https://img.shields.io/badge/CI-passing-brightgreen?style=flat&logo=github" alt="CI">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat" alt="License">
+  <img src="https://img.shields.io/badge/node-%3E%3D20-brightgreen?style=flat" alt="node">
+  <img src="https://img.shields.io/badge/TypeScript-strict-blue?style=flat" alt="TypeScript">
+  <img src="https://img.shields.io/badge/PRs-welcome-ff69b4?style=flat" alt="PRs welcome">
+</p>
+
+**<short punchline / sub-tagline — a little personality is good>**
+
+</div>
+
+---
+```
+
+Rules for the header:
+- **Title**: the project name as an `<h1>`, centered.
+- **Hook** (the `###` line): the strongest one-sentence value prop. Punchy and
+  specific — "your AI agent reads your ENTIRE repo to fix one bug. i fixed it."
+  beats "a tool for context optimization." Reuse/expand the About description.
+- **Badges**: only include badges that are TRUE. Swap per project:
+  - `License-<MIT|Apache--2.0|...>` — match the actual LICENSE.
+  - `node-%3E%3D20` → the real runtime (`python-3.12`, `swift-5.9`, etc.).
+  - `TypeScript-strict` only if `tsconfig` has `strict: true`; drop otherwise.
+  - `CI-passing` only if a workflow exists — better: use the live badge
+    `github/actions/workflow/status/OWNER/REPO/ci.yml`. No CI → drop it.
+  - `PRs-welcome` is fine on any open-source repo.
+  - Keep 3–5 badges. Dead/false badges look worse than none.
+- **Punchline** (the bold line): one more line with personality — the "lol"
+  energy in the reference is intentional; keep it human, not corporate.
+- Close with `</div>` then a `---` rule before the body ("## what is this").
+
+Below this header comes the banner/screenshots/etc. from the anatomy above.
+
+## Optional footer block (license + contact)
+
+Close long READMEs with a matching centered footer:
+
+```html
+---
+
+<div align="center">
+
+**<ProjectName>** · MIT © <year> <Name>
+
+[Website](https://...) · [X](https://x.com/...) · [GitHub](https://github.com/USER)
+
+</div>
+```
+Only include links that resolve. Match the LICENSE line to the actual license.
+
 ## Markdown patterns (copy these exactly)
 
 **Centered banner:**
